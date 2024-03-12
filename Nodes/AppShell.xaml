@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Shell
+    x:Class="Nodes.AppShell"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:local="clr-namespace:Nodes"
+    Shell.FlyoutBehavior="Disabled"
+    Title="Nodes">
+
+    <TabBar>
+        <ShellContent
+            Title="Home"
+            ContentTemplate="{DataTemplate local:AboutPage}"
+            Route="AboutPage" />
+
+        <ShellContent
+            Title="Cortinas"
+            ContentTemplate="{DataTemplate local:MainPage}"
+            Route="MainPage" />
+
+        <ShellContent
+            Title="Anotações"
+            ContentTemplate="{DataTemplate local:NodePage}"
+            Route="NodePage" />
+    </TabBar>
+    
+    
+
+</Shell>
